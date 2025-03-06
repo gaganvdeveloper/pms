@@ -8,5 +8,11 @@
 </head>
 <body>
 	<h1>Product Created Successfully</h1>
+	<br>
+	<br>
+	<br>
+	<a href="index.jsp">Create  Product</a>
+	
+	<a href="allproducts">View All Products</a>
 </body>
 </html>

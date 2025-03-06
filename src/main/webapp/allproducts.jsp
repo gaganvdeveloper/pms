@@ -57,6 +57,7 @@
 </head>
 <body>
     <h1>All Products</h1>
+    <a href="index.jsp"> <button>Create Product</button> </a>
     <table>
         <tr>
             <th>ID</th>
@@ -64,6 +65,7 @@
             <th>Price</th>
             <th>Brand</th>
             <th>Description</th>
+            <th colspan="2">Action</th>
         </tr>
         <%
             ResultSet rs = (ResultSet) request.getAttribute("abc");
@@ -75,6 +77,8 @@
             <td><%= rs.getString(3) %></td>
             <td><%= rs.getString(4) %></td>
             <td><%= rs.getString(5) %></td>
+            <td> <a href="delete?id=<%= rs.getString(1) %>"> <button>Delete</button> </a> </td>
+            <td> <a href="updatepage?id=<%= rs.getString(1) %>"> <button>Update</button> </a> </td>
         </tr>
         <%} %>
     </table>
